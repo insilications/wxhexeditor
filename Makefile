@@ -1,5 +1,5 @@
 PKG_NAME := wxhexeditor
-URL = https://github.com/solemnwarning/rehex.git
+URL = https://github.com/EUA/wxHexEditor.git
 ARCHIVES = 
 ARCHIVES_GIT = 
 

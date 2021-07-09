@@ -1,1 +1,11 @@
-%make_install prefix=/usr
+install -dm 0755 %{buildroot}/usr/bin
+install -dm 0755 %{buildroot}/usr/lib64
+install -dm 0755 %{buildroot}/usr/share/pixmaps
+install -dm 0755 %{buildroot}/usr/share/applications
+install -dm 0755 %{buildroot}/usr/share/wxHexEditor/templates
+install -m 755 -p bin/wxHexEditor %{buildroot}/usr/bin/
+install -m 755 -p clr-build/mhash/libmhash.so* %{buildroot}/usr/lib64/
+install -m 755 -p clr-build/udis86/libudis.so* %{buildroot}/usr/lib64/
+install -m 755 -p resources/wxHexEditor.desktop %{buildroot}/usr/share/applications/
+install -m 755 -p resources/wxHexEditor.png %{buildroot}/usr/share/pixmaps/
+cp -R -a templates/ %{buildroot}/usr/share/wxHexEditor/
