@@ -1,0 +1,2 @@
+#install -dm 0755 %{buildroot}/usr/share/imhex/plugins
+#install -m 755 -p clr-build/plugins/builtin/builtin.hexplug %{buildroot}/usr/share/imhex/plugins/
